@@ -1,0 +1,229 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:  'Open Sans', sans-serif;
+}
+
+*, *:after,*:before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  font-weight: 100;
+}
+
+p {
+  color: grey;
+  position: relative;
+  left: 50px;
+}
+
+nav {
+  background-color: #2E101E;
+}
+
+nav ul {
+  padding: 20px 0 20px 20px;
+}
+
+nav ul li {
+  display: inline;
+  padding:10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.route-tracker {
+  width: 100%;
+  margin: auto;
+  border-bottom: 1px solid black;
+  position: relative;
+  background-color: #583D4A;
+  color: #2E101E;
+}
+
+.route-tracker-container {
+  width:450px;
+  margin-left:250px;
+  padding: 20px;
+}
+
+/*needs positioning for mobile devices*/
+.route-tracker a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  background-color: #2E101E;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  position: relative;
+  float: right;
+  bottom:54px;
+  right: 150px;
+}
+
+#auckland {
+  border-top: 1px solid black;
+}
+
+/*dot for animation*/
+.marker {
+  width: 70px;
+  height: 70px;
+  background-color: #2E101E;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
+  border-radius: 50%;
+}
+
+#auck-anim::before {
+  content: "";
+  width: 70px;
+  height:70px;
+  border-radius: 50%;
+  background-color: #2E101E;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 85px;
+  transform: translate(-50%, -50%);
+  transition:.5s;
+  visibility: hidden;
+}
+
+#auck-anim:hover::before {
+  visibility: visible;
+  height: 100px;
+  width:100px;
+}
+
+#whan-anim::before {
+  content: "";
+  width:15px;
+  height:50px;
+  display: block;
+  background-color: #2E101E;
+  position: absolute;
+  top: -50%;
+  transform: translateY(-50%);
+  left:77px;
+  border-radius: 7.5px;
+  visibility: hidden;
+}
+
+#whan-anim:hover::before {
+  top: 50%;
+  visibility: visible;
+  transition: 1s;
+}
+
+#ham-anim::before {
+  content: "";
+  width:15px;
+  height:50px;
+  display: block;
+  background-color: #2E101E;
+  position: absolute;
+  top: -50%;
+  transform: translateY(-50%);
+  left:77px;
+  border-radius: 7.5px;
+  visibility: hidden;
+}
+
+#ham-anim:hover::before {
+  top: 50%;
+  visibility: visible;
+  transition: 1s;
+}
+
+#mau-anim::before {
+  content: "";
+  width:15px;
+  height:50px;
+  display: block;
+  background-color: #2E101E;
+  position: absolute;
+  top: -50%;
+  transform: translateY(-50%);
+  left:77px;
+  border-radius: 7.5px;
+  visibility: hidden;
+}
+
+#mau-anim:hover::before {
+  top: 50%;
+  visibility: visible;
+  transition: 1s;
+}
+
+#wel-anim::before {
+  content: "";
+  width:15px;
+  height:50px;
+  display: block;
+  background-color: #2E101E;
+  position: absolute;
+  top: -50%;
+  transform: translateY(-50%);
+  left:77px;
+  border-radius: 7.5px;
+  visibility: hidden;
+}
+
+#wel-anim:hover::before {
+  top: 50%;
+  visibility: visible;
+  transition: 1s;
+}
+
+#ble-anim::before {
+  content: "";
+  width:15px;
+  height:50px;
+  display: block;
+  background-color: #2E101E;
+  position: absolute;
+  top: -50%;
+  transform: translateY(-50%);
+  left:77px;
+  border-radius: 7.5px;
+  visibility: hidden;
+}
+
+#ble-anim:hover::before {
+  top: 50%;
+  visibility: visible;
+  transition: 1s;
+}
+
+#mar-anim::before {
+  content: "";
+  width:15px;
+  height:50px;
+  display: block;
+  background-color: #2E101E;
+  position: absolute;
+  top: -50%;
+  transform: translateY(-50%);
+  left:77px;
+  border-radius: 7.5px;
+  visibility: hidden;
+}
+
+#mar-anim:hover::before {
+  top: 50%;
+  visibility: visible;
+  transition: 1s;
+}
