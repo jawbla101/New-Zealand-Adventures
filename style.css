@@ -48,17 +48,15 @@ nav ul li {
   display: inline;
   padding: 13px 20px 10px 20px;
   border: 1px solid #000;
-  transition:1.3s;
+  transition: border-color 1.3s;
 }
 
 nav ul li:hover {
-  border: 1px solid #3A7600;
-  transition: 1.3s;
+  border-color: #3A7600;
 }
 
 nav ul li a:hover {
   color: #3A7600;
-  transition: .7s;
 }
 
 nav ul li a {
@@ -66,7 +64,7 @@ nav ul li a {
   color: #fff;
   font-weight: 500;
   font-size: 1.5em;
-  transition: .7s;
+  transition: color .7s;
 }
 
 .route-tracker {
@@ -84,14 +82,12 @@ nav ul li a {
   height: auto;
   margin: 0px auto;
   padding: 20px;
-  transition: 1s;
-  transition-delay: 2s;
+  transition: padding-bottom 1s;
+  transition-delay: 1s;
 }
 
 .route-tracker-container:hover {
   padding-bottom: 200px;
-  transition: 2s;
-  transition-delay: .3s;
 }
 
 .story-button {
@@ -142,7 +138,7 @@ nav ul li a {
   top: 50%;
   left: 85px;
   transform: translate(-50%, -50%);
-  transition:.5s;
+  transition: all .5s;
   visibility: hidden;
 }
 
@@ -170,11 +166,37 @@ nav ul li a {
 .route-tracker-container:hover::before {
   top: 50%;
   visibility: visible;
-  transition: 1s;
+  transition: top 1s;
 }
 
 .inline-link {
   text-decoration: none;
   font-weight: 700;
   color: grey;
+}
+
+/* toasty */
+.toasty {
+  position: fixed;
+  right: -200px;
+  bottom: 0;
+  animation: 1.5s toasty-animation 4s;
+}
+
+@keyframes toasty-animation {
+  0% {
+    right: -200px;
+  }
+
+  25% {
+    right: 0;
+  }
+
+  75% {
+    right: 0;
+  }
+
+  100% {
+    right: -200px;
+  }
 }
